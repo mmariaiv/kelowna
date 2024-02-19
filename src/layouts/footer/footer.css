@@ -1,0 +1,222 @@
+.footer {
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    background-image: url("../../assets/images/footer_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
+}
+
+.contacts {
+    margin: 0 auto;
+    width: calc(100% - 70px * 2);
+    padding: 92px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contacts__text-container {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+
+    gap:30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 10%;
+    border: 1px solid white;
+    gap: 20px;
+    align-items: center;
+}
+
+.form__subtitle .contacts__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__title {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.consultation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.contacts__details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts__details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+.contacts__details-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contacts__text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contacts__image {
+    content: "";
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts__image_geo {
+    background-image: url("../../assets/images/map-pin.svg");
+}
+
+.contacts__image_email {
+    background-image: url("../../assets/images/mail.svg");
+}
+
+.consultation__btn {
+    all: unset;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    color: white;
+    font-family: inherit;
+    font-weight: 400;
+    padding: 15px 20px;
+    background-color: rgb(101, 121, 2);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color .2s ease;
+}
+
+.consultation__btn:hover {
+    background-color: rgba(101, 121, 2, 0.7);
+    transition: all .2s ease;
+}
+
+
+.form-input {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+.form-element-input {
+    outline: none;
+    height: 1.5rem;
+    display: block;
+    background: none;
+    padding: 15px 10px 0 0;
+    font-size: 1rem;
+    border: 0;
+    line-height: 1.5;
+    width: 100%;
+    color: white;
+    box-shadow: none;
+    opacity: 0.001;
+    transition: opacity 0.28s ease;
+    will-change: opacity;
+}
+
+.form-element-bar {
+    height: 2px;
+    margin-top: 2px;
+    background: white;
+    position: relative;
+    display: block;
+}
+
+.form-element-bar:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(101, 121, 2);
+    height: 2px;
+    display: block;
+    transform: rotateY(90deg);
+    transition: transform .28s ease;
+    will-change: transform;
+}
+
+.form-element-label {
+    position: absolute;
+    top: .85rem;
+    line-height: 1.5rem;
+    pointer-events: none;
+    /*padding-left: 0.125rem;*/
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    color: white;
+    transform: translateY(-20%) scale(1.1);
+    transform-origin: left center;
+    transition: transform .28s ease, color .28s linear, opacity .28s linear;
+    will-change: transform, color, opacity;
+    cursor: text;
+}
+
+.form-element-hint {
+    color: white;
+}
+
+
+.form-element-input.hasValue ~ .form-element-bar::after,
+.form-element-input:focus ~ .form-element-bar::after {
+    transform: rotateY(0deg);
+}
+.form-element-input.hasValue ~ .form-element-label,
+.form-element-input:focus ~ .form-element-label {
+    color: white;
+}
+.form-element-input.hasValue,
+.form-element-input:focus {
+    opacity: 1;
+}
+.form-element-input.hasValue ~ .form-element-label,
+.form-element-input:focus ~ .form-element-label {
+    transform: translateY(-50%) translateY(-0.5em) translateY(-2px);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+.form-is-success .form-element-input,
+.form-is-success .form-element-label,
+.form-is-success .form-element-hint {
+    color: #259337;
+}
+
+
+
