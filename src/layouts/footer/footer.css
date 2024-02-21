@@ -35,6 +35,7 @@
     border: 1px solid white;
     gap: 20px;
     align-items: center;
+    border-radius: 8px;
 }
 
 .form__subtitle .contacts__subtitle {

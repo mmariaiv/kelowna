@@ -5,3 +5,5 @@
 @import url("./layouts/header/header.css");
 @import url("./components/navigation/navigation.css");
 @import url("./layouts/footer/footer.css");
+@import url("./pages/home/home.css");
+@import url("./components/services/services.css");

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Layout from "./layouts/layout/index.jsx";
 import {Route, Routes} from "react-router";
-import Index from "./pages/home/index.jsx";
+import Home from "./pages/home/index.jsx";
 import Gallery from "./pages/gallery/index.jsx";
 import About from "./pages/about/index.jsx";
 
@@ -11,7 +11,7 @@ function App() {
     <div className="page">
      <Layout>
          <Routes>
-             <Route path={"/"} element={<Index/>} />
+             <Route path={"/"} element={<Home/>} />
              <Route path={"/gallery"} element={<Gallery />} />
              <Route path={"/about"} element={<About />} />
          </Routes>
