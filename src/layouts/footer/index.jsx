@@ -78,9 +78,9 @@ function Footer() {
                             <p className="contacts__text">Производство Республики Карелия: г.Петрозаводск, Ужесельга,
                                 ул.Центральная, д.69</p>
                         </Link>
-                        <Link to={"mailto:kelowna@list.ru"} target="_blank" rel="noopener noreferrer" className="contacts__details-container">
+                        <Link to={"mailto:Stroymarket.shop@yandex.ru"} target="_blank" rel="noopener noreferrer" className="contacts__details-container">
                             <div className="contacts__image contacts__image_email"></div>
-                            <p className="contacts__text">kelowna@list.ru</p>
+                            <p className="contacts__text">Stroymarket.shop@yandex.ru</p>
                         </Link>
                         <Link  target="_blank" rel="noopener noreferrer" to={"tel:+79091527038"} className="contacts__details-container">
                             <div className="contacts__image contacts__image_phone"></div>

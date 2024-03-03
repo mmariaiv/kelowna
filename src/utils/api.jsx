@@ -26,7 +26,7 @@ class Api {
 }
 
 export const api = new Api({
-    baseUrl: "http://localhost:8080",
+    baseUrl: "https://api.xn--80ajofkf9a.xn--p1acf",
     headers: {
         "Content-Type": "application/json",
     }
