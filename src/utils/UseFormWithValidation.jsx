@@ -1,6 +1,6 @@
 import React from "react";
 import isEmail from "validator/lib/isEmail";
-import { regexNameValidation } from "./constants";
+import { regexNameValidation, regexPhoneValidation } from "./constants";
 
 export function useFormWithValidation() {
     const [values, setValues] = React.useState({});
@@ -18,10 +18,16 @@ export function useFormWithValidation() {
             } else {
                 target.setCustomValidity("");
             }
+        } else if (name === "phone") {
+            if (!regexPhoneValidation.test(value)) {
+                target.setCustomValidity("Неверный формат телефона")
+            } else {
+                target.setCustomValidity("");
+            }
         } else if (name === "name") {
             if (!regexNameValidation.test(value)) {
                 target.setCustomValidity(
-                    "Имя должно содержать только латиницу, кириллицу, пробел или дефис."
+                    "Имя должно содержать только латиницу, кириллицу, пробел или дефис"
                 );
             }
         else {

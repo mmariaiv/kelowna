@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   width: 100%;
-  min-width: 320px;
+  min-width: 410px;
 }
 
 .page {
@@ -38,5 +38,9 @@ h3 {
 h4 {
   margin: 0;
   padding: 0;
+}
+
+.page {
+  position: relative;
 }
 

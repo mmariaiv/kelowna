@@ -7,3 +7,9 @@
 @import url("./layouts/footer/footer.css");
 @import url("./pages/home/home.css");
 @import url("./components/services/services.css");
+@import url("./components/home-advert/home-advert.css");
+@import url("./components/prices/prices.css");
+@import url("./components/pine-tree-price/pine-tree-price.css");
+@import url("./components/projects/projects.css");
+@import url("./pages/gallery/gallery.css");
+@import url("./components/up-button/up-button.css");

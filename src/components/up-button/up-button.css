@@ -1,0 +1,32 @@
+.up-btn {
+    all: unset;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/images/chevron-down-solid.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: rgba(219, 219, 219, 0.45);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.up-btn:hover {
+    background-color: rgb(101,121,2);
+    background-image: url("../../assets/images/chevron-hover.svg");
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    padding: 10px;
+}

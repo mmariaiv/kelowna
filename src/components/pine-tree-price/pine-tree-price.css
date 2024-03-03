@@ -1,0 +1,149 @@
+.pinetree {
+    max-width: 100%;
+    width: calc(100% - 70px * 2);
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.pinetree__title {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pinetree__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+details > summary {
+    list-style: none;
+}
+
+.accordion {
+   display: flex;
+    flex-direction: column;
+}
+
+.accordion__summary {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(101, 121, 2);
+    padding-bottom: 8px;
+}
+
+.accordion__summary-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+    width: 100%;
+}
+
+.accordion__summary-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.accordion__summary-title::before {
+    content: url("../../assets/images/tree-solid.svg");
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
+}
+
+.accordion__arrow-icon {
+    content: "";
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/images/chevron-right-solid.svg");
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.accordion__arrow-icon_on {
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion__item {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion__details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;justify-content: space-between;
+}
+
+.accordion__title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.accordion__price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1023px) {
+    .pinetree {
+        width: calc(100% - 40px * 2);
+        gap: 40px;
+    }
+
+    .pinetree__title {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .accordion__summary-title {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (max-width: 764px) {
+    .pinetree {
+        width: calc(100% - 20px * 2);
+        gap: 30px;
+    }
+
+    .pinetree__title {
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .accordion__summary-title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .accordion__title {
+        font-size: 18px;
+    }
+
+    .accordion__price {
+        font-size: 18px;
+    }
+
+}

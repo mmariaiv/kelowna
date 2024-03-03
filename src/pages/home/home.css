@@ -12,6 +12,8 @@
     margin: 0 auto;
 }
 
+
+
 .cover__img {
     width: 100%;
     max-width: 100%;
@@ -61,4 +63,328 @@
 .cover__description {
     font-size: 24px;
     font-weight: 400;
+}
+
+.materials {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 0 100px 0;
+}
+
+.materials__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.materials__title {
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.materials__img {
+    max-width: 50%;
+}
+
+.materials__about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.materials__about-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(101, 121, 2);
+}
+
+.materials__about-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+}
+
+.about-factory {
+    padding: 70px 0 50px 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-factory__block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.about-factory__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-factory__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-factory__title {
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.about-factory__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-factory__fact-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(101,121,2);
+}
+
+.about-factory__fact-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+}
+
+.about-factory__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .cover {
+        max-width: 100%;
+        width: calc(100% - 70px * 2);
+    }
+
+    .materials {
+        max-width: 100%;
+        width: calc(100% - 70px * 2);
+    }
+
+    .about-factory {
+        max-width: 100%;
+        width: calc(100% - 70px * 2);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cover {
+        width: calc(100% - 40px * 2);
+    }
+
+    .materials {
+        width: calc(100% - 40px * 2);
+    }
+    .about-factory {
+        width: calc(100% - 40px * 2);
+    }
+
+    .cover__title {
+        font-size: 30px;
+    }
+
+    .cover__subtitle {
+        font-size: 20px;
+    }
+
+    .cover__number {
+        font-size: 60px;
+    }
+
+    .cover__description {
+        font-size: 20px;
+    }
+
+    .about-factory__title {
+        font-size: 30px;
+
+    }
+
+    .about-factory__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .about-factory__fact-title {
+        font-size: 20px;
+    }
+
+    .about-factory__fact-description {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .materials__title {
+        font-size: 30px;
+    }
+
+    .materials__img {
+        max-width: 40%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .materials__about-title {
+        font-size: 20px;
+    }
+
+    .materials__about-description {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .about-factory__img {
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .cover {
+        width: calc(100% - 20px * 2);
+        padding: 10px 0;
+        overflow: hidden;
+    }
+
+    .cover__img {
+        width: 100%;
+        overflow: hidden;
+        max-width: none;
+
+    }
+
+    .materials {
+        width: calc(100% - 20px * 2);
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .about-factory {
+        max-width: 100%;
+        width: calc(100% - 20px * 2);
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .cover__title {
+        font-size: 26px;
+    }
+
+    .cover__subtitle {
+        font-size: 18px;
+    }
+
+    .cover__number {
+        font-size: 40px;
+    }
+
+    .cover__description {
+        font-size: 18px;
+    }
+
+    .about-factory__title {
+        font-size: 26px;
+
+    }
+
+    .about-factory__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .about-factory__fact-title {
+        font-size: 20px;
+    }
+
+    .about-factory__fact-description {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .about-factory__block {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .materials__title {
+        font-size: 26px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .materials__img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .materials__about-title {
+        font-size: 20px;
+    }
+
+    .materials__about-description {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .about-factory__img {
+        width: 50%;
+        align-self: center;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: none;
+        visibility: hidden;
+    }
+
+    .cover__container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .cover__facts-container {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: right;
+    }
+
+    .about-factory {
+        padding: 20px 0;
+    }
+
+    .about-factory__container {
+        gap: 20px;
+    }
+
+    .about-factory__item {
+        gap: 10px;
+    }
+
+    .materials__description {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+
 }

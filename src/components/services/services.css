@@ -1,10 +1,15 @@
 .services {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(219, 219, 219, 0.45);
+}
+
+.services__container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 100%;
-    background-color: rgba(219, 219, 219, 0.45);
-    padding: 30px 0 50px 0;
+    padding: 100px 0 100px 0;
 }
 
 .services__title-container {
@@ -34,6 +39,7 @@
 .services__title {
     font-size: 33px;
     font-weight: 600;
+
 }
 
 .services__subtitle {
@@ -47,6 +53,10 @@
     background-color: rgba(181, 181, 181, 0.35);
     width: 100%;
     border-radius: 8px;
+}
+
+.card:nth-child(2n) {
+    flex-direction: row-reverse;
 }
 
 .card__description {
@@ -88,6 +98,7 @@
 .card__title {
     font-weight: 700;
     font-size: 21px;
+    text-transform: uppercase;
 }
 
 .card__subtitle {
@@ -122,7 +133,7 @@
     flex-direction: column;
     gap: 20px;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     padding: 10px 15px;
 }
@@ -130,14 +141,15 @@
 .vertical-card__img {
     object-position: center;
     object-fit: cover;
-    max-width: 260px;
-    width: 100%;
+    width: 250px;
+    height: 170px;
     border-radius: 8px;
 }
 
 .vertical-card__title {
     font-size: 18px;
     font-weight: 700;
+    padding: 10px 0 0 0;
 }
 
 .vertical-card__subtitle {
@@ -157,12 +169,192 @@
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .vertical-card__btn:hover {
     background-color: rgb(101,121,2);
     color: white;
     transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 1280px) {
+    .services {
+        width: 100%;
+    }
+    .services__container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: calc(100% - 70px * 2);
+    }
+    .services__additional {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .services__cards {
+        max-width: 100%;
+        width: 100%;
+        grid-template-columns: repeat(2, calc(100% / 2 - 30px));
+        grid-template-rows: repeat(2, minmax(300px, 500px));
+    }
+
+    .services__title-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .vertical-card__img {
+        width: 100%;
+        max-width: 250px;
+        max-height: 170px;
+    }
+
+    .services__gallery {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .card__img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .card__description {
+        padding: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .services__container {
+        width: calc(100% - 40px * 2);
+    }
+
+
+
+    .services__container {
+        gap: 30px;
+        padding: 70px 0 70px 0;
+    }
+
+    .vertical-card__title {
+        font-size: 14px;
+    }
+
+    .vertical-card__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+    .card__title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .card__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 764px) {
+    .services__container {
+        width: calc(100% - 20px * 2);
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+
+    .card__description {
+        padding: 20px;
+    }
+
+    .services__title {
+        font-size: 28px;
+
+    }
+
+    .services__gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .vertical-card {
+        gap: 10px;
+    }
+
+    .vertical-card__img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .services__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .vertical-card__title {
+        font-size: 18px;
+    }
+
+    .services__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .vertical-card__subtitle {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+
+    .card__title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .card__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .card__consultation-btn {
+        all: unset;
+        font-family: inherit;
+        width: calc(100% - 20px);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 10px;
+        background-color: rgb(101, 121, 2);
+        border-radius: 4px;
+        color: white;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .card:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .card__img {
+        border-radius: 8px 8px 0 0;
+    }
 }
 
 
