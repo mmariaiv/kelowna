@@ -3,7 +3,6 @@ import Layout from "./layouts/layout/index.jsx";
 import {Route, Routes} from "react-router";
 import Home from "./pages/home/index.jsx";
 import Gallery from "./pages/gallery/index.jsx";
-import About from "./pages/about/index.jsx";
 import UpButton from "./components/up-button/index.jsx";
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
          </Routes>
      </Layout>
         <UpButton/>
+
     </div>
   )
 }

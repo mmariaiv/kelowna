@@ -54,6 +54,8 @@ details > summary {
     text-transform: uppercase;
 }
 
+
+
 .accordion__summary-title::before {
     content: url("../../assets/images/tree-solid.svg");
     display: inline-block;
@@ -102,6 +104,11 @@ details > summary {
 .accordion__price {
     font-size: 20px;
     font-weight: 600;
+}
+
+.accordion__price_single {
+    justify-self: center;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1023px) {

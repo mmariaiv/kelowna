@@ -1,8 +1,6 @@
 import React from "react";
 function PineTreePrice() {
     const [chevronClicked, isChevronClicked] = React.useState(false);
-    const [isActive, setIsActive] = React.useState(false);
-    const arrowRef = React.createRef();
 
     function handleAccordionClick(evt) {
         // isChevronClicked(current => !current);
@@ -18,6 +16,20 @@ function PineTreePrice() {
         <section className="pinetree">
             <h3 className="pinetree__title">цены на сухую необрезную доску</h3>
             <div className="pinetree__accordion">
+                <details className="accordion">
+                    <summary className="accordion__summary" onClick={handleAccordionClick}>
+                        <div className="accordion__summary-container">
+                            <p className="accordion__summary-title">доска из кело</p>
+                            <div
+                                className={`accordion__arrow-icon ${chevronClicked && `accordion__arrow-icon_on`}`}></div>
+                        </div>
+                    </summary>
+                    <ul className="accordion__item">
+                        <li className="accordion__details">
+                            <p className="accordion__price accordion__price_single">от 800 р/кв.м</p>
+                        </li>
+                    </ul>
+                </details>
                 <details className="accordion">
                     <summary className="accordion__summary" onClick={handleAccordionClick}>
                         <div className="accordion__summary-container">
@@ -148,21 +160,7 @@ function PineTreePrice() {
                         </li>
                     </ul>
                 </details>
-                <details className="accordion">
-                    <summary className="accordion__summary" onClick={handleAccordionClick}>
-                        <div className="accordion__summary-container">
-                            <p className="accordion__summary-title">дуб нижегородский</p>
-                            <div
-                                className={`accordion__arrow-icon ${chevronClicked && `accordion__arrow-icon_on`}`}></div>
-                        </div>
-                    </summary>
-                    <ul className="accordion__item">
-                        <li className="accordion__details">
-                            <p className="accordion__title">Класс (AB) 45-50 мм</p>
-                            <p className="accordion__price">5.500 р/кв.м</p>
-                        </li>
-                    </ul>
-                </details>
+
             </div>
             <div className="pinetee__result">
             </div>

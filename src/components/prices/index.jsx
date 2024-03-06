@@ -1,10 +1,13 @@
-const typeOfService = [
-    "фундамент", "коробка здания", "перекрытия", "кровля утепленная", "фасадные работы", "остекление", "система электроснабжения", "система водоснабжения", "отопление", "внутренняя отделка",
-]
+import {HashLink} from "react-router-hash-link";
+
 import Cover from "../../assets/images/price_cover.jpg";
 import BathHouse from "../../assets/images/bathhouse_price.png"
 import InsidePrice from "../../assets/images/inside_price.jpg";
-import {HashLink} from "react-router-hash-link";
+const typeOfService = [
+    "фундамент", "коробка здания", "перекрытия", "кровля утепленная", "фасадные работы", "остекление", "система электроснабжения", "система водоснабжения", "отопление", "внутренняя отделка",
+]
+
+
 function Prices() {
     return (
         <section className="prices" id={"price"}>
@@ -20,7 +23,7 @@ function Prices() {
                         <p className="price-container__title">строительство дома</p>
                     </div>
                     <div className="price-container__price">
-                        <p className="price-container__price-text">30 000 ₽/кв.м</p>
+                        <p className="price-container__price-text">55 000 ₽/кв.м</p>
                     </div>
                     <div className="price-container__additional">
                         {typeOfService.map((type, key) => {
@@ -34,11 +37,12 @@ function Prices() {
                 <div className="price-container">
                     <div className="price-containter__header">
                         <img className="price-container__cover" src={BathHouse} alt="Обложка цены"/>
-                        <div className="price-container__icon price-container__icon_bathhouse"></div>
+                        <div className="price-container__icon price-container__icon_bathhouse">
+                        </div>
                         <p className="price-container__title">строительство бани</p>
                     </div>
                     <div className="price-container__price">
-                        <p className="price-container__price-text">28 000 ₽/кв.м</p>
+                        <p className="price-container__price-text">52 000 ₽/кв.м</p>
                     </div>
                     <div className="price-container__additional">
                         {typeOfService.map((type, key) => {
@@ -56,7 +60,7 @@ function Prices() {
                         <p className="price-container__title">строительство под ключ</p>
                     </div>
                     <div className="price-container__price">
-                        <p className="price-container__price-text">32 000 ₽/кв.м</p>
+                        <p className="price-container__price-text">80 000 ₽/кв.м</p>
                     </div>
                     <div className="price-container__additional">
                         {typeOfService.map((type, key) => {
