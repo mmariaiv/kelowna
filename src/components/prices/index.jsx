@@ -13,7 +13,7 @@ function Prices() {
         <section className="prices" id={"price"}>
            <div className="prices__title-container">
                <h2 className="prices__title">ЦЕНЫ НА СТРОИТЕЛЬСТВО</h2>
-               <p className="prices__subtitle">Свяжитесь с нами и рассчитайте полную стоимость постройки вашего проетка!</p>
+               <p className="prices__subtitle">Свяжитесь с нами и рассчитайте полную стоимость постройки вашего проекта!</p>
            </div>
             <div className="prices__carousel">
                 <div className="price-container">

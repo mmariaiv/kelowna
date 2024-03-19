@@ -42,7 +42,7 @@ function Footer() {
     }, [resetForm])
 
     return (
-        <div className="footer" id={"contact"}>
+        <footer className="footer" id={"contact"}>
             <div className="contacts">
                 {width <=764 && (
                     <div className={"contacts__header"}>
@@ -138,7 +138,7 @@ function Footer() {
                     </form>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
